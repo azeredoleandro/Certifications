@@ -1,0 +1,15 @@
+num = int(input("Digite um número natural: "))
+steps = 0
+
+while num != 1:
+    if num % 2 == 0:
+        print(num)
+        num = num // 2
+    else:
+        num = 3 * num + 1
+    steps += 1
+
+# Imprimir o último número (1) fora do loop para evitar a repetição
+print(1)
+
+print(f"\nsteps = {steps}")
